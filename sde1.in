@@ -1,0 +1,21 @@
+%{
+#include "sde1.tab.h"
+%}
+
+%option noinput
+%option nounput
+
+%%
+a return A;
+
+b return B;
+
+c return C;
+
+d return D;
+
+e return E;
+
+%%
+
+
