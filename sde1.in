@@ -9,7 +9,7 @@ TERM_E (e$)|(^e)
 UN_TOK [^a-e]
 
 %%
-[ \r\t\n]+ /* Whitespace */
+[\n]+ /* Newline Only */
 
 "a" return A;
 
