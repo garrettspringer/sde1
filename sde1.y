@@ -40,6 +40,3 @@ ds: D ds {$$=$2+1;} | D {$$=1;}
 
 es: E es {$$=$2+1;} | E {$$=1;}
 ;
-
-unexpected_token: UNEXPECTED_TOKEN {return(-1);}
-;
