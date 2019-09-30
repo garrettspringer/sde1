@@ -3,7 +3,7 @@
 #include "yyerror.c"
 
 int main() {
-  printf("\n>>>> CONTEXTUAL parsing of string  <<<<<<");
+  printf("\n>>>> CONTEXTUAL parsing of string  <<<<<<\n");
 
   int rv;
   rv = yyparse();

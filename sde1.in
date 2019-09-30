@@ -5,16 +5,25 @@
 %option noinput
 %option nounput
 
+TERM_E (e$)|(^e)
+UN_TOK [^a-e]
+
 %%
-a return A;
+[ \r\t\n]+ /* Whitespace */
 
-b return B;
+"a" return A;
 
-c return C;
+"b" return B;
 
-d return D;
+"c" return C;
 
-e return E;
+"d" return D;
+
+"e" return E;
+
+<<EOF>> return END_FILE;
+
+{UN_TOK} return UNEXPECTED_TOKEN;
 
 %%
 
