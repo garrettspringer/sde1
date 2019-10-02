@@ -5,7 +5,6 @@
 %option noinput
 %option nounput
 
-TERM_E (e$)|(^e)
 UN_TOK [^a-e]
 
 %%
