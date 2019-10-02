@@ -1,5 +1,5 @@
 int yyerror()  /* Called by yyaparse on error */
 {
-  printf("syntax error\n");
+  printf("\nsyntax error");
   return(-1);
 }

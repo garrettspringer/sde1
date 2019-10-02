@@ -22,7 +22,10 @@ UN_TOK [^a-e]
 
 <<EOF>> return END_FILE;
 
-{UN_TOK} return UNEXPECTED_TOKEN;
+{UN_TOK} {
+           printf("%s", yytext);
+           return UNEXPECTED_TOKEN;
+         }
 
 %%
 
